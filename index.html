@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Intro Component with Sign-up Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="item-1">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="item-2">
+        <div class="container">
+          <div id="free" class="item">
+            <span id="duration">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </div>
+          <div class="item form">
+            <form action="">
+              <div class="focus firstName">
+                <input type="text" placeholder="First Name" class="input" />
+                <p class="fName warning">First Name cannot be empty</p>
+              </div>
+              <div class="focus lastName">
+                <input type="text" placeholder="Last Name" class="input" />
+                <p class="lName warning">Last Name cannot be empty</p>
+              </div>
+              <div class="focus inputEmail">
+                <input type="email" placeholder="Email Address" class="input" />
+                <p class="email warning">Looks like this is not an email</p>
+              </div>
+              <div class="focus inputPassword">
+                <input type="password" placeholder="Password" class="input" />
+                <p class="password warning">Password cannot be empty</p>
+              </div>
+              <div class="btn">
+                <button type="submit">CLAIM YOUR FREE TRIAL</button>
+              </div>
+              <div class="item tnc">
+                <p>
+                  By clicking the button, you are agreeing to our
+                  <a href="#">Terms and Services</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

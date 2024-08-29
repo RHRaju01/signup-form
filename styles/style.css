@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
+  overflow: hidden;
+}
+
+.item-1 {
+  width: 700px;
+  color: white;
+}
+
+.item-1 h1 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.item-1 p {
+  padding: 30px 50px 0px 0px;
+  line-height: 25px;
+}
+
+#free {
+  height: 60px;
+  width: 540px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  text-align: center;
+  box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 0.2);
+}
+
+#duration {
+  font-weight: bold;
+}
+
+.item-1 {
+  padding: 50px 40px 50px 60px;
+}
+
+.form {
+  background: white;
+  height: auto;
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 25px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 0.2);
+}
+
+input {
+  font-weight: 700;
+  color: hsl(249, 10%, 26%);
+  height: 58px;
+  width: 460px;
+  padding: 0px 0px 0px 30px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: none;
+  border-radius: 5px;
+}
+
+input.error {
+  background: url(../images/icon-error.svg) no-repeat;
+  background-position: top 50% left 95%;
+}
+
+input,
+.btn,
+.tnc {
+  margin: 10px 0px 10px 0px;
+}
+
+/* Custom placeholder color for invalid email */
+.invalid-placeholder::placeholder {
+  color: red;
+}
+
+button {
+  height: 58px;
+  width: 460px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(154, 59%, 51%, 0.9);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 hsl(154, 59%, 45%);
+}
+
+.tnc {
+  text-align: center;
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: hsla(154, 59%, 51%, 0.7);
+}
+
+.tnc p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+
+.warning {
+  font-style: italic;
+  font-size: 0.7rem;
+  color: hsla(0, 100%, 74%, 1);
+  text-align: right;
+  margin: -5px 2px 5px 0px;
+  display: none;
+}
+
+.warning-active,
+input.error {
+  border: 1px solid red;
+  display: block;
+}
